@@ -26,10 +26,13 @@ header {
 }
 
 h1 {
-    color: #ffffff; 
+    color: green; 
     text-align: center;
 }
 
+.color{
+    color: #fff;
+}
 .wrapper{
     display: flex;
     justify-content: center;
