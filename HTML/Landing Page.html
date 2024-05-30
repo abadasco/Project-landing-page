@@ -8,32 +8,20 @@
 </head>
 <body>
 <header>
-        <h1 class="color">Web Site</h1>
+        <h1 class="color">Landing Page</h1>
         <nav>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="wrapper">
-            <button id="switchMode">Switch</button>
-        </div>
+            <button class="wrapper" id="switchMode"></button>
 </header>
     
 <main>
     <div class="container">
-        <div class="photos">
-            <div class="photo">
-                <img src="/Foto/M1.jpg" alt="Foto1">
-            </div>
-            <div class="photo">
-                <img src="/Foto/M2.jpg" alt="Foto2">
-            </div>
-            <div class="photo">
-                <img src="/Foto/M3.jpg" alt="Foto3">
-            </div>
+        <div id="clock-container">
+            <div id="clock"></div>
         </div>
-
-        <h1>Bună, sunt Arian!</h1>
-            
+        <h1 >Bună, sunt Arian!</h1>  
         <div class="section" href="about">
             <h2 id="about">Despre Mine</h2>
             <p>Despre mine și Studii</p>
@@ -60,8 +48,16 @@
                 </li>
             </ul>
         </div>
+        
     </div>
 </main>
+<div class="sidebar">
+    <button id="showCalendarBtn">Calendar</button>
+</div>
+<div class="calendar" id="calendar">
+    
+</div>
+</body>
 <script src="/Java script/script.js"></script>
 <footer>
     <p>&copy; Landing Page 2024</p>

@@ -14,6 +14,7 @@ header {
     text-align: center;
 }
 
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -33,9 +34,26 @@ h1 {
     color: #fff;
 }
 
-.wrapper{
-    display: flex;
-    justify-content: center;
+.wrapper {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.wrapper:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    transform: scale(1.05);
+}
+
+.wrapper:active {
+    transform: scale(0.95);
 }
 
 .section {
@@ -76,10 +94,107 @@ nav a {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    
 }
 
 .photo img {
     width: 100%;
     height: auto;
     display: block;
+}
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#clock {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 72px;
+    color: #000000;
+}
+
+.calendar {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    width: 300px;
+}
+
+.calendar header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calendar .today {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.calendar header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.calendar th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.calendar td {
+    border: 1px solid #ddd;
+}
+
+.calendar td:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.sidebar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
 }
