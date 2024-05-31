@@ -7,13 +7,52 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header {
-    background-color: #333; 
-    color: white; 
-    padding: 10px 0;
-    text-align: center;
+.box {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
+header {
+    background: #333; 
+    color: #fff; 
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #006eff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #line {
+    float: left;
+}
+header #line h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+    
+}
+
+.container1 {
+    width: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: auto;
+}
 
 .container {
     max-width: 800px;
@@ -45,6 +84,7 @@ h1 {
     padding: 12px 24px;
     text-transform: uppercase;
     transition: background 0.3s ease, transform 0.3s ease;
+    margin: 5px;
 }
 
 .wrapper:hover {
@@ -103,6 +143,28 @@ nav a {
     display: block;
     
 }
+
+#main-content {
+    padding: 10px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.box1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    
+}
+.box1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.727);
+}
+
 #clock-container {
     display: flex;
     justify-content: center;
