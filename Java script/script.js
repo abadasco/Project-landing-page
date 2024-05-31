@@ -32,7 +32,7 @@ document.getElementById('showCalendarBtn').addEventListener('click', function() 
 
 function generateCalendar() {
     var calendar = document.getElementById('calendar');
-    calendar.innerHTML = ''; // Очистка календаря перед обновлением
+    calendar.innerHTML = ''; 
 
     var currentDate = new Date();
     var currentMonth = currentDate.getMonth();
@@ -52,7 +52,7 @@ function generateCalendar() {
     var thead = document.createElement('thead');
     var tbody = document.createElement('tbody');
 
-    // Создание заголовков таблицы (пн, вт, ср, ...)
+    
     var dayNames = ['Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur', 'Sun'];
     var tr = document.createElement('tr');
     for (var i = 0; i < 7; i++) {
@@ -63,7 +63,7 @@ function generateCalendar() {
     thead.appendChild(tr);
     table.appendChild(thead);
 
-    // Создание ячеек с днями месяца
+    
     var count = 1;
     for (var i = 0; i < 6; i++) {
         var tr = document.createElement('tr');
