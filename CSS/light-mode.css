@@ -10,7 +10,7 @@ body {
 .box {
     width: 80%;
     margin: auto;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
     color: #fff; 
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #006eff 3px solid;
+    border-bottom: #00ff2f 3px solid;
 }
 
 header a {
@@ -43,8 +43,28 @@ header #line h1 {
 }
 header nav {
     float: right;
-    margin-top: 10px;
-    
+    margin-top: 10px; 
+}
+
+.moving{
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.moving:hover{
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    transform: scale(1.05);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.moving:active{
+    transform: scale(0.95);
 }
 
 .container1 {
@@ -65,7 +85,7 @@ header nav {
 }
 
 h1 {
-    color: green; 
+    color: #00ca14; 
     text-align: center;
 }
 
@@ -101,14 +121,7 @@ h1 {
 }
 
 .section h2 {
-    color: green; 
-}
-
-footer {
-    background-color: #333; 
-    color: white; 
-    text-align: center;
-    padding: 10px 0;
+    color: #00ca14; 
 }
 
 nav {
@@ -189,4 +202,75 @@ nav a {
     font-family: 'Helvetica', sans-serif;
     font-size: 72px;
     color: #000000;
+}
+
+.buttonimg{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+  #showImageButton {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #showImageButton:hover {
+    background-color: #0056b3;
+  }
+
+  #showImageButton:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+
+  #imageContainer {
+    margin-top: 20px;
+  }
+
+  #imageContainer img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+.maxC{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+}
+
+.calendar-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+}
+.date {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.time {
+    font-size: 16px;
+    color: #555;
+}
+
+  footer {
+    background: #333;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    padding: 10px 0;
 }
