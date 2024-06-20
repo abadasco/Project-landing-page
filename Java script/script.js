@@ -1,3 +1,4 @@
+//Light-Dark Mode
 const switchModeButton = document.getElementById('switchMode');
 const themeLink = document.getElementById('theme');
 
@@ -9,7 +10,18 @@ switchModeButton.addEventListener('click', () => {
     }
 });
 
+//Sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.querySelector(".main").style.marginLeft = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.querySelector(".main").style.marginLeft= "0";
+}
+
+//Timpul din main
 function updateClock() {
     const clock = document.getElementById('clock');
     const now = new Date();
@@ -22,40 +34,42 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();  
 
-// Selectăm butonul și containerul pentru imagine
+// Eventul si imaginea
 var button = document.getElementById("showImageButton");
 var imageContainer = document.getElementById("imageContainer");
 
-// Atașăm un event listener pentru evenimentul de click
+
 button.addEventListener("click", function() {
-  // Creăm un element de imagine
+
   var img = document.createElement("img");
-  img.src = "/Foto/not_available.jpg"; // URL-ul imaginii
+  img.src = "/Foto/not_available.jpg"; 
   img.alt = "Imagine de exemplu";
   img.id = "exampleImage";
 
-  // Adăugăm imaginea în container
+  
   imageContainer.appendChild(img);
 
-  // Dezactivăm butonul după ce imaginea este afișată
+
   button.disabled = true;
 
   document.addEventListener("click", function(event) {
-    // Verificăm dacă imaginea este afișată
+   
     var img = document.getElementById("exampleImage");
     if (img) {
-      // Ascundem imaginea și reactivăm butonul
+      
       imageContainer.removeChild(img);
       button.disabled = false;
     }
   });
 
-  // Prevenim propagarea evenimentului de click de la buton la document
+  
   button.addEventListener("click", function(event) {
     event.stopPropagation();
   });
 });
 
+
+// Calendarul si timp
 function updateDateTime() {
     const now = new Date();
     const days = ['Duminică', 'Luni', 'Marți', 'Miercuri', 'Joi', 'Vineri', 'Sâmbătă'];

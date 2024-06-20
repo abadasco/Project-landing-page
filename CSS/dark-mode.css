@@ -7,6 +7,10 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+html {
+    scrollbar-color: #555 #2c2c2c; 
+}
+
 .box {
     width: 80%;
     margin: auto;
@@ -67,6 +71,97 @@ header nav {
     transform: scale(0.95);
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main1 {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.openbtn:hover {
+    background-color: #313131;
+}
+
+.white-bullet {
+    list-style-type: none; 
+}
+.white-bullet li {
+    position: relative;
+}
+.white-bullet li::before {
+    content: '\2022'; 
+    color: white; 
+    position: absolute;
+    left: -20px; 
+}
+
 .container1 {
     width: 80%;
     overflow: hidden;
@@ -93,6 +188,14 @@ h1 {
 .color{
     color: #fff;
 }
+
+.color1{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .wrapper {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     border: none;
@@ -264,7 +367,7 @@ nav a {
 }
 .time {
     font-size: 16px;
-    color: #c9c9c9;
+    color: #555;
 }
 
 footer { 
@@ -272,4 +375,5 @@ footer {
     color: rgb(255, 255, 255); 
     text-align: center;
     padding: 10px 0;
+    height: auto;
 }

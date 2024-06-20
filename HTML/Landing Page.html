@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/CSS/light-mode.css" id="theme">
 </head>
 <body>
- 
+
 <header>
     <div class="box">
         <div id="line">
@@ -24,23 +24,53 @@
         </nav>          
     </div> 
 </header>
-   
+<div class="sidebar" id="mySidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="profile">
+        <img src="/Foto/Fd.jpg" alt="Profile Photo" class="profile-photo">
+    </div>
+    <h2 class="color1">WELCOME</h2>
+    
+    <ul class="white-bullet">
+        <h2 class="color">Contacte</h2>
+        <li class="color">&#x1F3E0; Rezidență <p>R. Moldova, Or.Chișinău</p></li>
+        <li class="color">&#x260E; Telefon <p>+373(0)798-288-21</p></li>
+        <li class="color">&#x2709; Adresă de Email <p>arianbadasco@gmail.com</p></li>          
+    </ul>
+
+    <h2 class="color1">TIME</h2>
+    <div class="maxC">
+        <div class="calendar-box">
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+        </div>
+    </div>
+</div>
+
+<div class="main1">
+    <button class="openbtn" onclick="openNav()">☰</button>
+</div> 
+
+</div >
 <main>
 </div>    
     <div class="container">
-        
         <div id="clock-container">
             <div id="clock"></div>
         </div>
         <div class="photos">
             <img class="photo" src="/Foto/photo1.jpg" alt="Foto1">
         </div>
-        <h1>Bună, sunt Arian!</h1>  
+        <h1>WELCOME</h1>  
         <div class="section" href="about">
             <h2 id="about">Despre Mine</h2>
             <ul>
-                <li>Liceu:12 clase - „Am susținut examenul de bacalaureat cu succes.”</li>
-                <li>Cursuri și diplome finalizate:none</li>
+                <li>Liceu:
+                    <p>Instituția Publică Liceul Teoretic "Traian"</p>
+                </li>
+                <li>Cursuri și diplome finalizate: 
+                    <p>Tekwill Academy - Frond End Developer</p>
+                </li>
             </ul>
         </div>
 
@@ -50,21 +80,17 @@
             <li>Ciclismul</li>   
             </ul>
         </div>
-
-        <div class="section" >
+        <div class="section">
             <h2 id="contact">Contacte</h2>
-            <ul>
-                <li>Telefon:+373(0)798-288-21</li>
-                <li>Email: arianbadasco@gmail.com</li>
-                <li>My Profile:
-                    <a href="https://github.com/abadasco">GitHub</a>
-                </li>
-                <li>My Profile:
-                    <a href="https://www.linkedin.com/in/arian-badasco-384903273/?trk=opento_sprofile_topcard">LinkedIN</a>
-                </li>
+            <ul>  
+                    <li>My Profile
+                        <a href="https://github.com/abadasco">GitHub</a>
+                        <a href="https://www.linkedin.com/in/arian-badasco-384903273/?trk=opento_sprofile_topcard">LinkedIN</a>
+                    </li> 
             </ul>
-        </div> 
+        </div>  
     </div>
+    
 </main>
  <h2 class="texth2" id="photo">Photo</h2>
 <section id="main-content" class="container1">
@@ -81,13 +107,6 @@
   <button id="showImageButton">Afișează Imaginea</button>
   <div id="imageContainer"></div>
 </div>
-
-<div class="maxC">
-    <div class="calendar-box">
-    <div class="date" id="date"></div>
-    <div class="time" id="time"></div>
-    </div>
-    </div>
 </body>
 <script src="/Java script/script.js"></script>
 <footer>
