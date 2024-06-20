@@ -76,7 +76,7 @@ header nav {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.2s;
+    transition: 0.5s;
     padding-top: 60px;
 }
 
@@ -360,6 +360,4 @@ nav a {
     color: rgb(255, 255, 255); 
     text-align: center;
     padding: 10px 0;
-    height: auto;
-    position: fixed;
 }
