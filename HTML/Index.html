@@ -5,53 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="/CSS/light-mode.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
 </head>
 <body>
 
-<header>
+<header id="hed" class="hero">
     <div class="box">
         <div id="line">
-            <h1 class="color">Landing Page</h1>
+            <h1 class="color2">Landing Page</h1>
         </div>
         <button class="wrapper" id="switchMode"></button>
+                
         <nav>
-            <ul>
-                <li><a class="moving" href="#about">About</a></li>
-                <li><a class="moving" href="#contact">Contact</a></li>
-                <li><a class="moving" href="#photo">Photo</a></li>
-                <li><a class="moving" href="#event">Event</a></li>
-            </ul>
-        </nav>          
+            <a class="moving" href="#about">About</a>
+            <a class="moving" href="#contact">Contact</a>
+            <a class="moving" href="#photo">Photo</a>
+            <a class="moving" href="#event">Event</a>
+            <button class="main1" id="openbtn" onclick="openNav()">☰</button>
+        </nav> 
+
+            </div>
+            <h1 class="welcom">Welcome.</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Type to  search...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        </div> 
+               
     </div> 
 </header>
-<div class="sidebar" id="mySidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <div class="profile">
-        <img src="/Foto/Fd.jpg" alt="Profile Photo" class="profile-photo">
-    </div>
-    <h2 class="color1">WELCOME</h2>
+<div class="main">
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="profile">
+            <img src="/Foto/Fd.jpg" alt="Profile Photo" class="profile-photo">
+        </div>
+        <h2 class="color1">WELCOME</h2>
+        
+        <ul class="white-bullet">
+            <h2 class="color">Contacte</h2>
+            <li class="color">&#x1F3E0; Rezidență <p>R. Moldova, Or.Chișinău</p></li>
+            <li class="color">&#x260E; Telefon <p>+373(0)798-288-21</p></li>
+            <li class="color">&#x2709; Adresă de Email <p>arianbadasco@gmail.com</p></li>          
+        </ul>
     
-    <ul class="white-bullet">
-        <h2 class="color">Contacte</h2>
-        <li class="color">&#x1F3E0; Rezidență <p>R. Moldova, Or.Chișinău</p></li>
-        <li class="color">&#x260E; Telefon <p>+373(0)798-288-21</p></li>
-        <li class="color">&#x2709; Adresă de Email <p>arianbadasco@gmail.com</p></li>          
-    </ul>
-
-    <h2 class="color1">TIME</h2>
-    <div class="maxC">
-        <div class="calendar-box">
-        <div class="date" id="date"></div>
-        <div class="time" id="time"></div>
+        <h2 class="color1">TIME</h2>
+        <div class="maxC">
+            <div class="calendar-box">
+            <div class="date" id="date"></div>
+            <div class="time" id="time"></div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="main1">
-    <button class="openbtn" onclick="openNav()">☰</button>
-</div> 
-
-</div >
 <main>
 </div>    
     <div class="container">

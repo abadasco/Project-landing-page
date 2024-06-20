@@ -90,3 +90,21 @@ function updateDateTime() {
 
 updateDateTime();
 setInterval(updateDateTime, 1000);
+
+// JS search
+document.getElementById('search-btn').addEventListener('click', function() {
+  var searchTerm = document.getElementById('search-input').value.trim();
+  
+  showSearchResults(searchTerm);
+});
+
+function showSearchResults(term) {
+  var resultsContainer = document.getElementById('search-results');
+  resultsContainer.innerHTML = ''; 
+  
+
+  var resultItem = document.createElement('div');
+  resultItem.classList.add('result-item');
+  resultItem.textContent = `Результаты поиска для: ${term}`;
+  resultsContainer.appendChild(resultItem);
+}

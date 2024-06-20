@@ -5,6 +5,7 @@ body {
     background-color: #000000;  
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
+      
 }
 
 html {
@@ -16,13 +17,16 @@ html {
     margin: auto;
     overflow: hidden;
 }
-
-header {
-    background: #333; 
-    color: #fff; 
+ #hed{
     padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #00ff2f 3px solid;
+    min-height: 70px;  
+}
+
+.hero {
+    height: 100vh;
+    background: url('/Foto/Dark.jpg') no-repeat center center/cover;
+    color: #fff; 
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 
 header a {
@@ -31,14 +35,13 @@ header a {
     text-transform: uppercase;
     font-size: 16px;
 }
-header ul {
-    padding: 0;
-    list-style: none;
-}
-header li {
+
+header a {
     display: inline;
     padding: 0 20px 0 20px;
+    font-weight: bold;
 }
+
 header #line {
     float: left;
 }
@@ -48,28 +51,84 @@ header #line h1 {
 header nav {
     float: right;
     margin-top: 10px;
+    background-color: transparent;
 }
 
+.welcom{
+    color: #fff;
+    font-weight: 800;
+    font-size: 100px;
+    text-align: left;
+    margin-left: 150px ;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    max-width: 600px;
+    border-radius: 40px;
+    background-color: #2424248f;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-left: 150px;
+}
+  
+  #search-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #1e1e1e;
+    border-radius: 40px;
+    font-size: 16px;
+    background: #000;
+    color: #ffffff;
+    
+  }
+  
+  #search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #search-results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
 .moving{
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #b300ff, #ffffff);
     color: white;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
     font-size: 20px;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
 }
 
 .moving:hover{
-    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    background: linear-gradient(135deg, #ffffff, #b300ff);
     transform: scale(1.05);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
 
 .moving:active{
     transform: scale(0.95);
 }
+
 
 .sidebar {
     height: 100%;
@@ -108,18 +167,22 @@ header nav {
 .main1 {
     transition: margin-left .5s;
     padding: 16px;
+    font-weight: bold;
 }
 
-.openbtn {
+#openbtn {
     font-size: 20px;
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
     border: none;
+    background: transparent;
 }
 
-.openbtn:hover {
-    background-color: #444;
+#openbtn:hover {
+    background-color: #ffffff69;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .sidebar .profile {
@@ -185,7 +248,7 @@ h1 {
 }
 
 .color{
-    color: #fff;
+    color: #ffffff;
 }
 
 .color1{
@@ -193,6 +256,9 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.color2{
+    color: #ffffff;
 }
 
 .wrapper {

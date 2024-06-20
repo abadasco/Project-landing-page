@@ -13,54 +13,111 @@ body {
     overflow:hidden;
 }
 
-header {
-    background: #333; 
-    color: #fff; 
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #00ff2f 3px solid;
+#hed{
+   padding-top: 30px;
+   min-height: 70px;  
+}
+
+.hero {
+   height: 100vh;
+   background: url('/Foto/Dark.jpg') no-repeat center center/cover;
+   color: #fff; 
+   mask-image: linear-gradient(to bottom, white 60%, transparent 100%);
 }
 
 header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-header ul {
-    padding: 0;
-    list-style: none;
-}
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-header #line {
-    float: left;
-}
-header #line h1 {
-    margin: 0;
-}
-header nav {
-    float: right;
-    margin-top: 10px; 
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 16px;
 }
 
-.moving{
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+header a {
+   display: inline;
+   padding: 0 20px 0 20px;
+   font-weight: bold;
+}
+
+header #line {
+   float: left;
+}
+header #line h1 {
+   margin: 0;
+   
+}
+header nav {
+   float: right;
+   margin-top: 10px;
+   background-color: transparent;
+}
+
+.welcom{
+   color: #ffffff;
+   font-weight: 800;
+   font-size: 100px;
+   text-align: left;
+   margin-left: 150px ;
+   margin-bottom: 20px;
+}
+
+.search-container {
+   max-width: 600px;
+   border-radius: 40px;
+   background-color: #9a9a9a8f;
+   padding: 10px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   margin-left: 150px;
+   
+}
+ 
+ #search-input {
+   width: 70%;
+   padding: 10px;
+   border: 1px solid #b6b6b6;
+   border-radius: 40px;
+   font-size: 16px;
+   background: #ffffff;
+ }
+ 
+ #search-btn {
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ #search-btn:hover {
+   background-color: #0056b3;
+ }
+ 
+ #search-results {
+   margin-top: 20px;
+   padding: 10px;
+   background-color: #000000;
+   color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ .moving{
+    background: linear-gradient(135deg, #b300ff, #ffffff);
     color: white;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
     font-size: 20px;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
 }
 
 .moving:hover{
-    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    background: linear-gradient(135deg, #ffffff, #b300ff);
     transform: scale(1.05);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
 
 .moving:active{
@@ -104,20 +161,22 @@ header nav {
 .main1 {
     transition: margin-left .5s;
     padding: 16px;
+    font-weight: bold;
 }
 
-.openbtn {
+#openbtn {
     font-size: 20px;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
-    background-color: transparent;
+    background: transparent;
 }
 
-.openbtn:hover {
-    background-color: #d3d3d3;
+#openbtn:hover {
+    background-color: #ffffff69;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .sidebar .profile {
@@ -168,15 +227,20 @@ h1 {
 }
 
 .color{
-    color: #fff;
+    color: #ffffff;
 }
 
 .color1{
-    color: #fff;
+    color: #ffffff;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+.color2{
+    color: #ffffff;
+}
+
 .wrapper {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     border: none;
