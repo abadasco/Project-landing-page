@@ -70,12 +70,28 @@ header nav {
     margin-right: 150px;
     font-size: 25px;
     margin-top: -140px;
+    align-items:center;
 }
 
 .pagelag{
     display: flex;
-    align-items: flex-start;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.page p{
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 25%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: rgb(0, 0, 0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 .search-container {

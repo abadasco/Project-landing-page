@@ -68,13 +68,31 @@ header nav {
     margin-right: 150px;
     font-size: 25px;
     margin-top: -140px;
+    align-items:center;
 }
 
 .pagelag{
     display: flex;
-    align-items: flex-start;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.page p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 25%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #000000, #ffffff);
+    color: rgb(0, 0, 0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
 
 .search-container {
    max-width: 509px;
@@ -285,7 +303,7 @@ h1 {
 }
 
 .section h2 {
-    color: #00ca14; 
+    color: #000000; 
 }
 
 nav {
@@ -433,7 +451,6 @@ nav a {
     font-size: 16px;
     color: #555;
 }
-
 
   footer {
     background: #333;
