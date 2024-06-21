@@ -7,11 +7,9 @@ body {
     transition: background-color 0.3s, color 0.3s;
       
 }
-
 html {
     scrollbar-color: #555 #2c2c2c; 
 }
-
 .box {
     width: 80%;
     margin: auto;
@@ -21,27 +19,23 @@ html {
     padding-top: 30px;
     min-height: 70px;  
 }
-
 .hero {
     height: 100vh;
     background: url('/Foto/Dark.jpg') no-repeat center center/cover;
     color: #fff; 
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
-
 header a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
-
 header a {
     display: inline;
     padding: 0 20px 0 20px;
     font-weight: bold;
 }
-
 header #line {
     float: left;
 }
@@ -53,7 +47,6 @@ header nav {
     margin-top: 10px;
     background-color: transparent;
 }
-
 .welcom{
     color: #fff;
     font-weight: 800;
@@ -62,7 +55,6 @@ header nav {
     margin-left: 150px ;
     margin-bottom: 10px;
 }
-
 .page{ 
     color: #ffffff;
     margin-left: 50%;
@@ -72,13 +64,11 @@ header nav {
     margin-top: -140px;
     align-items:center;
 }
-
 .pagelag{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .page p{
     font-size: 20px;
     line-height: 20px;
@@ -93,7 +83,6 @@ header nav {
     background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-
 .search-container {
     max-width: 509px;
     border-radius: 40px;
@@ -102,7 +91,6 @@ header nav {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-left: 150px;
 }
-  
   #search-input {
     width: 83%;
     padding: 10px;
@@ -113,7 +101,6 @@ header nav {
     color: #ffffff;
     
   }
-  
   #search-btn {
     padding: 10px 20px;
     font-size: 16px;
@@ -124,11 +111,9 @@ header nav {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
   #search-btn:hover {
     background-color: #0056b3;
   }
-  
   #search-results {
     margin-top: 20px;
     padding: 10px;
@@ -137,7 +122,6 @@ header nav {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
-
 .moving{
     background: linear-gradient(135deg, #b300ff, #ffffff);
     color: white;
@@ -147,7 +131,6 @@ header nav {
     background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
-
 .moving:hover{
     background: linear-gradient(135deg, #ffffff, #b300ff);
     transform: scale(1.05);
@@ -155,12 +138,9 @@ header nav {
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
-
 .moving:active{
     transform: scale(0.95);
 }
-
-
 .sidebar {
     height: 100%;
     width: 0;
@@ -173,7 +153,6 @@ header nav {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -182,11 +161,9 @@ header nav {
     display: block;
     transition: 0.5s;
 }
-
 .sidebar a:hover {
     color: #f1f1f1;
 }
-
 .sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -194,13 +171,11 @@ header nav {
     font-size: 36px;
     margin-left: 50px;
 }
-
 .main1 {
     transition: margin-left .5s;
     padding: 16px;
     font-weight: bold;
 }
-
 #openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -209,25 +184,21 @@ header nav {
     border: none;
     background: transparent;
 }
-
 #openbtn:hover {
     background-color: #ffffff69;
     border-radius: 10px;
     cursor: pointer;
 }
-
 .sidebar .profile {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .sidebar .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
-
 .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -237,11 +208,9 @@ header nav {
     border-radius: 5px;
     background-color: transparent;
 }
-
 .openbtn:hover {
     background-color: #313131;
 }
-
 .white-bullet {
     list-style-type: none; 
 }
@@ -254,14 +223,12 @@ header nav {
     position: absolute;
     left: -20px; 
 }
-
 .container1 {
     width: 80%;
     overflow: hidden;
     border-radius: 20px;
     margin: auto;
 }
-
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -272,16 +239,13 @@ header nav {
     border-radius: 20px;
     overflow: hidden; 
 }
-
 h1 {
     color: #00ca14; 
     text-align: center;
 }
-
 .color{
     color: #ffffff;
 }
-
 .color1{
     color: #fff;
     display: flex;
@@ -291,7 +255,6 @@ h1 {
 .color2{
     color: #ffffff;
 }
-
 .wrapper {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     border: none;
@@ -305,42 +268,34 @@ h1 {
     transition: background 0.3s ease, transform 0.3s ease;
     margin: 5px;
 }
-
 .wrapper:hover {
     background: linear-gradient(135deg, #a777e3, #6e8efb);
     transform: scale(1.05);
 }
-
 .wrapper:active {
     transform: scale(0.95);
 }
-
 .section {
     margin-bottom: 20px;
 }
-
 .section h2 {
     color: #00ca14; 
 }
-
 nav {
     background-color: #333;
     text-align: center;
     padding: 10px 0;
 }
-
 nav a {
     color: white;
     text-decoration: none;
     padding: 0 20px;
 }
-
 .photos {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
-
 .photo {
     width: 30%;
     border-radius: 10px;
@@ -348,13 +303,11 @@ nav a {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
     margin: 10px;
 }
-
 .photo img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 #main-content {
     padding: 10px;
     background: #2d2c2c;
@@ -364,7 +317,6 @@ nav a {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
-
 .texth2{
     color: #ddd;
     display: flex;
@@ -372,7 +324,6 @@ nav a {
     justify-content: space-around;
     align-items: center;
 }
-
 .box1 {
     float: left;
     width: 30%;
@@ -385,7 +336,6 @@ nav a {
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.727);
 }
-
 #clock-container {
     display: flex;
     justify-content: center;
@@ -395,7 +345,6 @@ nav a {
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-
 #clock {
     font-family: 'Helvetica', sans-serif;
     font-size: 72px;
@@ -407,7 +356,6 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-
 #showImageButton {
     padding: 10px 20px;
     font-size: 16px;
@@ -418,20 +366,16 @@ nav a {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 #showImageButton:hover {
     background-color: #0056b3;
 }
-
 #showImageButton:disabled {
     background-color: #6c757d;
     cursor: not-allowed;
 }
-
 #imageContainer {
     margin-top: 20px;
 }
-
 #imageContainer img {
     max-width: 100%;
     height: auto;
@@ -439,14 +383,12 @@ nav a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .maxC{
     display: flex;
             justify-content: center;
             align-items: center;
             margin: 5px;
 }
-
   .calendar-box {
     background-color: rgb(0, 0, 0);
     padding: 20px;
@@ -465,7 +407,6 @@ nav a {
     font-size: 16px;
     color: #555;
 }
-
 footer { 
     background: #333;
     color: rgb(255, 255, 255); 
