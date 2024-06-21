@@ -1,14 +1,14 @@
 [
-    {
-        "title": "Первый пост",
-        "content": "Это содержимое первого поста."
+{
+    "name": "Arian",
+    "age": 20,
+    "adress": {
+        "city": "Chisinau",
+        "state": "MD"
     },
-    {
-        "title": "Второй пост",
-        "content": "Это содержимое второго поста."
-    },
-    {
-        "title": "Третий пост",
-        "content": "Это содержимое третьего поста."
-    }
+    "phoneNumber":[
+        {"type": "personal", "number": "79828821"}
+    ],
+    "isStudent":false
+}
 ]

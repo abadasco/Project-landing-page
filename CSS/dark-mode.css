@@ -60,11 +60,26 @@ header nav {
     font-size: 100px;
     text-align: left;
     margin-left: 150px ;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.page{ 
+    color: #ffffff;
+    margin-left: 50%;
+    margin-bottom: 0;
+    margin-right: 150px;
+    font-size: 25px;
+    margin-top: -140px;
+}
+
+.pagelag{
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
 }
 
 .search-container {
-    max-width: 600px;
+    max-width: 509px;
     border-radius: 40px;
     background-color: #2424248f;
     padding: 10px;
@@ -73,7 +88,7 @@ header nav {
 }
   
   #search-input {
-    width: 70%;
+    width: 83%;
     padding: 10px;
     border: 1px solid #1e1e1e;
     border-radius: 40px;
