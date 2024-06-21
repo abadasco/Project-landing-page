@@ -92,19 +92,33 @@ updateDateTime();
 setInterval(updateDateTime, 1000);
 
 // JS search
-document.getElementById('search-btn').addEventListener('click', function() {
-  var searchTerm = document.getElementById('search-input').value.trim();
-  
-  showSearchResults(searchTerm);
+  document.getElementById('search-btn').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const query = document.getElementById('search-input').value.toLowerCase();
+
+fetch('/Javascript/data.json')
+        .then(response => response.json())
+        .then(data => {
+
+            const results = data.filter(item => item.title.toLowerCase().includes(query) || item.content.toLowerCase().includes(query));
+            
+            displayResults(results);
+        });
 });
 
-function showSearchResults(term) {
-  var resultsContainer = document.getElementById('search-results');
-  resultsContainer.innerHTML = ''; 
-  
+  function displayResults(results) {
+    const resultsContainer = document.getElementById('search-results');
+    
+    resultsContainer.innerHTML = '';
 
-  var resultItem = document.createElement('div');
-  resultItem.classList.add('result-item');
-  resultItem.textContent = `Результаты поиска для: ${term}`;
-  resultsContainer.appendChild(resultItem);
+    if (results.length > 0) {
+        results.forEach(result => {
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('search-result');
+            resultItem.innerHTML = `<h2>${result.title}</h2><p>${result.content}</p>`;
+            resultsContainer.appendChild(resultItem);
+        });
+    } else {
+        resultsContainer.innerHTML = '<p>No results.</p>';
+    }
 }
