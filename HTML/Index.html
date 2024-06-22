@@ -6,77 +6,70 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="/CSS/light-mode.css" id="theme">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-
 </head>
 <body>
 
-<header id="hed" class="hero">
+<header class="hero">
     <div class="box">
-        <div id="line">
-            <h1 class="color2">Landing Page</h1>
+        <div>
+            <!-- <img class="logo" src="/Foto/logo.png" alt="Logo"> -->
+            <h1 class="color2">My Page</h1> 
         </div>
-        <button class="wrapper" id="switchMode"></button>
+        <button type="button" class="wrapper" id="switchMode"></button>
                 
         <nav>
-            <a class="moving" href="#about">About</a>
-            <a class="moving" href="#contact">Contact</a>
-            <a class="moving" href="#photo">Photo</a>
-            <a class="moving" href="#event">Event</a>
-            <button class="main1" id="openbtn" onclick="openNav()">☰</button>
-        </nav> 
-
+            <ul>
+                <li class="moving"><a href="#about">About</a></li>
+                <li class="moving"><a href="#contact">Contact</a></li>
+                <li class="moving"><a href="#photo">Photo</a></li>
+                <li class="moving"><a href="#event">Event</a></li>
+                <button type="button"  class="opentbtn" onclick="openNav()">☰</button>
+            </ul>
+        </nav>     
         </div>
         <div >
             <h1 class="welcom">Welcome.</h1>
         </div>
-
             <div class="search-container">
-            <input type="text" id="search-input" placeholder="Type to  search...">
-            <button id="search-btn"><i class="fas fa-search"></i></button>
-            </div>
-
-        <div class="page">
-            <h3 class="pagelag">Landing page.</h3> 
-            <p class="paragraf">The main goal of a Landing Page is to capture visitor attention and convert them as effectively as possible into a customer or prompt them to take a specific action, such as filling out a form, subscribing to a newsletter, purchasing a product, etc.</p>
-        </div>
-        </div> 
-                
+            <input type="text" class="search-input" placeholder="Type to  search...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>      
     </div> 
 </header>
-<div class="main">
+<div>
     <div class="sidebar" id="mySidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <div class="profile">
-            <img src="/Foto/Fd.jpg" alt="Profile Photo" class="profile-photo">
+        <a href="javascript:void(0)" onclick="closeNav()">×</a>
+        <div>
+            <img src="/Foto/photoProfile.jpg" alt="ProfilePhoto">
         </div>
         <h2 class="color1">WELCOME</h2>
         
         <ul class="white-bullet">
-            <h2 class="color">Contacte</h2>
-            <li class="color">&#x1F3E0; Rezidență <p>R. Moldova, Or.Chișinău</p></li>
-            <li class="color">&#x260E; Telefon <p>+373(0)798-288-21</p></li>
-            <li class="color">&#x2709; Adresă de Email <p>arianbadasco@gmail.com</p></li>          
+            <h2 class="txtColor">Contacte</h2>
+            <li class="txtColor">&#x1F3E0; Rezidență <p>R. Moldova, Or.Chișinău</p></li>
+            <li class="txtColor">&#x260E; Telefon <p>+373(0)798-288-21</p></li>
+            <li class="txtColor">&#x2709; Adresă de Email <p>arianbadasco@gmail.com</p></li>          
         </ul>
     
         <h2 class="color1">TIME</h2>
-        <div class="maxC">
+        <div class="calendarPosition">
             <div class="calendar-box">
-            <div class="date" id="date"></div>
-            <div class="time" id="time"></div>
-            </div>
+            <div class="data" id="date"></div>
+            <div class="timp" id="time"></div>
+        </div>
         </div>
     </div>
 <main>
 </div>    
     <div class="container">
-        <div id="clock-container">
-            <div id="clock"></div>
+        <div class="clock-container">
+            <div class="hclock" id="clock"></div>
         </div>
         <div class="photos">
             <img class="photo" src="/Foto/photo1.jpg" alt="Foto1">
         </div>
         <h1>WELCOME</h1>  
-        <div class="section" href="about">
+        <div class="section">
             <h2 id="about">Despre Mine</h2>
             <ul>
                 <li>Liceu:
@@ -103,8 +96,8 @@
             <h2 id="contact">Contacte</h2>
             <ul>  
                     <li>My Profile
-                        <a href="https://github.com/abadasco">GitHub</a>
-                        <a href="https://www.linkedin.com/in/arian-badasco-384903273/?trk=opento_sprofile_topcard">LinkedIN</a>
+                        <a class="styleLink" href="https://github.com/abadasco" target="_blank">GitHub<a>,</a></a>
+                        <a class="styleLink" href="https://www.linkedin.com/in/arian-badasco-384903273/?trk=opento_sprofile_topcard" target="_blank">LinkedIN</a>
                     </li> 
             </ul>
         </div>  
@@ -112,7 +105,7 @@
     
 </main>
  <h2 class="texth2" id="photo">Photo</h2>
-<section id="main-content" class="container1">
+<section class="container1">
    
     <div class="box1">
         <img class="img" src="/Foto/photo2.jpg" alt="Foto2">
@@ -127,8 +120,8 @@
 </section>
 
 <div class="buttonimg" id="event">
-  <button id="showImageButton">Afișează Imaginea</button>
-  <div id="imageContainer"></div>
+  <button class="imgbutton" type="button" id="showImageButton">Afișează Imaginea</button>
+  <div class="imgcontainer" id="imageContainer"></div>
 </div>
 </body>
 <script src="/Javascript/script.js"></script>
