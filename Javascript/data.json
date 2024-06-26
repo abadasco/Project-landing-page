@@ -1,0 +1,14 @@
+[
+{
+    "name": "Arian",
+    "age": 20,
+    "adress": {
+        "city": "Chisinau",
+        "state": "MD"
+    },
+    "phoneNumber":[
+        {"type": "personal", "number": "79828821"}
+    ],
+    "isStudent":false
+}
+]

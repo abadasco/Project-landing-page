@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/CSS/light-mode.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+<body>
+
+<header class="hero">
+    <div class="box">
+        <div>
+            <!-- <img class="logo" src="/Foto/logo.png" alt="Logo"> -->
+            <h1 class="color2">My Page</h1> 
+        </div>
+        <button type="button" class="wrapper" id="switchMode"></button>
+                
+        <nav>
+            <ul>
+                <li class="moving"><a href="#about">About</a></li>
+                <li class="moving"><a href="#contact">Contact</a></li>
+                <li class="moving"><a href="#photo">Photo</a></li>
+                <li class="moving"><a href="#event">Event</a></li>
+                <button type="button"  class="opentbtn" onclick="openNav()">☰</button>
+            </ul>
+        </nav>     
+        </div>
+        <div >
+            <h1 class="welcom">Welcome.</h1>
+        </div>
+            <div class="search-container">
+            <input type="text" class="search-input" placeholder="Type to  search...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>      
+    </div> 
+</header>
+<div>
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()">×</a>
+        <div>
+            <img src="/Foto/photoProfile.jpg" alt="ProfilePhoto">
+        </div>
+        <h2 class="color1">WELCOME</h2>
+        
+        <ul class="white-bullet">
+            <h2 class="txtColor">Contacte</h2>
+            <li class="txtColor">&#x1F3E0; Rezidență <p>R. Moldova, Or.Chișinău</p></li>
+            <li class="txtColor">&#x260E; Telefon <p>+373(0)798-288-21</p></li>
+            <li class="txtColor">&#x2709; Adresă de Email <p>arianbadasco@gmail.com</p></li>          
+        </ul>
+    
+        <h2 class="color1">TIME</h2>
+        <div class="calendarPosition">
+            <div class="calendar-box">
+            <div class="data" id="date"></div>
+            <div class="timp" id="time"></div>
+        </div>
+        </div>
+    </div>
+<main>
+</div>    
+    <div class="container">
+        <div class="clock-container">
+            <div class="hclock" id="clock"></div>
+        </div>
+        <div class="photos">
+            <img class="photo" src="/Foto/photo1.jpg" alt="Foto1">
+        </div>
+        <h1>WELCOME</h1>  
+        <div class="section">
+            <h2 id="about">Despre Mine</h2>
+            <ul>
+                <li>Liceu:
+                    <p>Instituția Publică Liceul Teoretic "Traian"</p>
+                </li>
+                <li>Cursuri și diplome finalizate: 
+                    <p>Tekwill Academy - Frond End Developer</p>
+                </li>
+                <li>Skills
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hobbi</h2>
+            <ul>
+            <li>Ciclismul</li>   
+            </ul>
+        </div>
+        <div class="section">
+            <h2 id="contact">Contacte</h2>
+            <ul>  
+                    <li>My Profile
+                        <a class="styleLink" href="https://github.com/abadasco" target="_blank">GitHub<a>,</a></a>
+                        <a class="styleLink" href="https://www.linkedin.com/in/arian-badasco-384903273/?trk=opento_sprofile_topcard" target="_blank">LinkedIN</a>
+                    </li> 
+            </ul>
+        </div>  
+    </div>
+    
+</main>
+ <h2 class="texth2" id="photo">Photo</h2>
+<section class="container1">
+   
+    <div class="box1">
+        <img class="img" src="/Foto/photo2.jpg" alt="Foto2">
+    </div>
+    <div class="box1">
+        <img class="img" src="/Foto/photo4.jpg" alt="Foto4">
+    </div>
+    <div class="box1">
+        <img class="img" src="/Foto/photo3.jpg" alt="Foto3">
+    </div>
+    
+</section>
+
+<div class="buttonimg" id="event">
+  <button class="imgbutton" type="button" id="showImageButton">Afișează Imaginea</button>
+  <div class="imgcontainer" id="imageContainer"></div>
+</div>
+</body>
+<script src="/Javascript/script.js"></script>
+<footer>
+    <p>&copy; Landing Page 2024</p>                           
+</footer>
