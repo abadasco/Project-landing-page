@@ -28,9 +28,15 @@ header a {
    padding: 0 20px 0 20px;
    font-weight: bold;
 } 
-header div div h1 {
-   float: left;
-   margin: 0;
+header{ 
+    div{ 
+        div{
+           h1{ 
+                float: left;
+                margin: 0;
+            } 
+        } 
+    }
 }
 header nav{
    float: right;
