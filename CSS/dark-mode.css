@@ -183,8 +183,6 @@ nav a {
     color: #818181;
     display: block;
     transition: 0.5s;
-}
-.sidebar a {
     position: absolute;
     top: 0;
     right: 25px;
@@ -210,18 +208,18 @@ h1 {
 }
 .white-bullet {
     list-style-type: none; 
+               li {
+                   position: relative;
+                }
+                li::before {
+                        content: '\2022'; 
+                        color: white; 
+                        position: absolute;
+                        left: -20px; 
+                }
 }
-.white-bullet li {
-    position: relative;
-}
-.white-bullet li::before {
-    content: '\2022'; 
-    color: white; 
-    position: absolute;
-    left: -20px; 
-}
-.color{
-    color: #ffffff;
+.txtColor{
+    color: #fff;
 }
 .color1{
     color: #fff;
