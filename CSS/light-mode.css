@@ -28,9 +28,15 @@ header a {
    padding: 0 20px 0 20px;
    font-weight: bold;
 } 
-header div div h1 {
-   float: left;
-   margin: 0;
+header{ 
+    div{ 
+        div{
+           h1{ 
+                float: left;
+                margin: 0;
+            } 
+        } 
+    }
 }
 header nav{
    float: right;
@@ -164,8 +170,6 @@ nav a {
     color: #818181;
     display: block;
     transition: 0.5s;
-}
-.sidebar a {
     position: absolute;
     top: 0;
     right: 25px;
@@ -191,15 +195,15 @@ h1 {
 }
 .white-bullet {
     list-style-type: none; 
-}
-.white-bullet li {
-    position: relative;
-}
-.white-bullet li::before {
-    content: '\2022'; 
-    color: white; 
-    position: absolute;
-    left: -20px; 
+               li {
+                   position: relative;
+                }
+                li::before {
+                        content: '\2022'; 
+                        color: white; 
+                        position: absolute;
+                        left: -20px; 
+                }
 }
 .txtColor{
     color: #ffffff;
