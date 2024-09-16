@@ -1,4 +1,3 @@
-//Light-Dark Mode
 const switchModeButton = document.getElementById('switchMode');
 const themeLink = document.getElementById('theme');
 switchModeButton.addEventListener('click', () => {
@@ -8,14 +7,12 @@ switchModeButton.addEventListener('click', () => {
         themeLink.setAttribute('href', '/CSS/light-mode.css');
     }
 });
-//Sidebar
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
 }
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
 }
-//Timpul din main
 function updateClock() {
     const clock = document.getElementById('clock');
     const now = new Date();
@@ -26,7 +23,6 @@ function updateClock() {
 }
 setInterval(updateClock, 1000);
 updateClock();  
-// Eventul si imaginea
 var button = document.getElementById("showImageButton");
 var imageContainer = document.getElementById("imageContainer");
 button.addEventListener("click", function() {
@@ -39,7 +35,6 @@ button.addEventListener("click", function() {
   document.addEventListener("click", function(event) {
     var img = document.getElementById("exampleImage");
     if (img) {
-      
       imageContainer.removeChild(img);
       button.disabled = false;
     }
@@ -48,7 +43,6 @@ button.addEventListener("click", function() {
     event.stopPropagation();
   });
 });
-// Calendarul si timp
 function updateDateTime() {
     const now = new Date();
     const days = ['Duminică', 'Luni', 'Marți', 'Miercuri', 'Joi', 'Vineri', 'Sâmbătă'];
@@ -65,5 +59,3 @@ function updateDateTime() {
 }
 updateDateTime();
 setInterval(updateDateTime, 1000);
-
-// JS search
