@@ -27,7 +27,7 @@ var button = document.getElementById("showImageButton");
 var imageContainer = document.getElementById("imageContainer");
 button.addEventListener("click", function() {
   var img = document.createElement("img");
-  img.src = "file:///C:/Users/user/Desktop/Project-landing-page/Foto/not_available.jpg"; 
+  img.src = "Foto/not_available.jpg"; 
   img.alt = "Imagine de exemplu";
   img.id = "exampleImage";
   imageContainer.appendChild(img);
