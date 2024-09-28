@@ -8,7 +8,7 @@ body {
 }
 .hero {
    height: 100vh;
-   background: url('/Foto/WhiteLine.jpg') no-repeat center center/cover;
+   background: url("Foto/WhiteLine.jpg") no-repeat center center/cover;
    color: #fff; 
    mask-image: linear-gradient(to bottom, white 60%, transparent 100%);
    padding-top: 30px;
