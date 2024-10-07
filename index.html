@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="/light_mode.css" id="theme">
+    <link rel="stylesheet" href="css/light_mode.css" id="theme">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 </head>
 <body>
@@ -39,7 +39,7 @@
     <div class="sidebar" id="mySidebar">
         <a href="javascript:void(0)" onclick="closeNav()">×</a>
         <div>
-            <img src="/Foto/photoProfile.jpg" alt="ProfilePhoto">
+            <img src="Foto/photoProfile.jpg" alt="ProfilePhoto">
         </div>
         <h2 class="color1">WELCOME</h2>
         
@@ -66,15 +66,12 @@
             <div class="hclock" id="clock"></div>
         </div>
         <div class="photos">
-            <img class="photo" src="/Foto/photo1.jpg" alt="Foto1">
+            <img class="photo" src="Foto/photo1.jpg" alt="Foto1">
         </div>
         <h1>WELCOME</h1>  
         <div class="section">
             <h2 id="about">Despre Mine</h2>
             <ul>
-                <li>Liceu:
-                    <p>Instituția Publică Liceul Teoretic "Traian"</p>
-                </li>
                 <li>Cursuri și diplome finalizate: 
                     <p>Tekwill Academy - Frond End Developer</p>
                 </li>
@@ -107,13 +104,13 @@
  <h2 class="texth2" id="photo">Photo</h2>
 <section class="container1">
     <div class="box1">
-        <img class="img" src="/Foto/photo2.jpg" alt="Foto2">
+        <img class="img" src="Foto/photo2.jpg" alt="Foto2">
     </div>
     <div class="box1">
-        <img class="img" src="/Foto/photo4.jpg" alt="Foto4">
+        <img class="img" src="Foto/photo4.jpg" alt="Foto4">
     </div>
     <div class="box1">
-        <img class="img" src="/Foto/photo3.jpg" alt="Foto3">
+        <img class="img" src="Foto/photo3.jpg" alt="Foto3">
     </div>  
 </section>
 
@@ -121,8 +118,38 @@
   <button class="imgbutton" type="button" id="showImageButton">Afișează Imaginea</button>
   <div class="imgcontainer" id="imageContainer"></div>
 </div>
+
+<div class="photos">
+    <img class="photo" src="Foto/diploma.png" alt="diploma">
+
+    <img class="photo" src="Foto/anexa.png" alt="anexa">
+</div>
+
+<div class="calculator">
+    <input type="text" id="result" readonly>
+<div class="buttons">
+  <button onclick="clearResult()" title="Clear">C</button>
+  <button onclick="appendValue('7')" title="Add 7 to the input">7</button>
+  <button onclick="appendValue('8')" title="Add 8 to the input">8</button>
+  <button onclick="appendValue('9')" title="Add 9 to the input">9</button>
+  <button onclick="appendValue('+')" title="Addition">+</button>
+  <button onclick="appendValue('4')" title="Add 4 to the input">4</button>
+  <button onclick="appendValue('5')" title="Add 5 to the input">5</button>
+  <button onclick="appendValue('6')" title="Add 6 to the input">6</button>
+  <button onclick="appendValue('-')" title="Subtraction">-</button>
+  <button onclick="appendValue('1')" title="Add 1 to the input">1</button>
+  <button onclick="appendValue('2')" title="Add 2 to the input">2</button>
+  <button onclick="appendValue('3')" title="Add 3 to the input">3</button>
+  <button onclick="appendValue('*')" title="Multiplication">*</button>
+  <button onclick="appendValue('0')" title="Add 0 to the input">0</button>
+  <button onclick="appendValue('.')" title="Add decimal point to the input">.</button>
+  <button onclick="calculateResult()" title="Calculate result">=</button>
+  <button onclick="appendValue('/')" title="Division">/</button>
+</div>
+</div>
+
 </body>
-<script src="/script.js"></script>
+<script src="Javascript/script.js"></script>
 <footer>
     <p>&copy; Landing Page 2024</p>
 </footer>
