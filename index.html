@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="light_mode.css" id="theme">
+    <link rel="stylesheet" href="dark_mode.css" id="theme">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 </head>
 <body>
@@ -65,35 +65,40 @@
         <div class="clock-container">
             <div class="hclock" id="clock"></div>
         </div>
-        <div class="photos">
-            <img class="photo" src="Foto/photo1.jpg" alt="Foto1">
-        </div>
         <h1>WELCOME</h1>  
         <div class="section">
-            <h2 id="about">Despre Mine</h2>
+            <h2 id="about">About Me</h2>
             <ul>
-                <li>Liceu:
-                    <p>Instituția Publică Liceul Teoretic "Traian"</p>
-                </li>
-                <li>Cursuri și diplome finalizate: 
+                <li>Courses and degrees completed: 
                     <p>Tekwill Academy - Frond End Developer</p>
                 </li>
-                <li>Skills
-                    <p>HTML5</p>
-                    <p>CSS3</p>
-                    <p>JavaScript</p>
+                <li>High School: 
+                    <p>Traian Theoretical High School</p>
+                </li>
+                <li> <h2>Skills</h2>
+                    <p>
+                        <strong>HTML5, CSS3, JavaScript</strong>
+                    </p>
                 </li>
             </ul>
         </div>
+        <h2 class="texth2">Diploma</h2>
+        
+        <div class="photos1">
+            <img class="photo" src="Foto/diploma.jpg" id="myImage" style="cursor: pointer;">
+        </div>
+        <div class="photos1">
+            <img class="photo" src="Foto/anexa.jpg" id="myImage1" style="cursor: pointer;">
+        </div>
+
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="imgFullScreen">
+            <div id="caption"></div>
+          </div>
 
         <div class="section">
-            <h2>Hobbi</h2>
-            <ul>
-            <li>Ciclismul</li>   
-            </ul>
-        </div>
-        <div class="section">
-            <h2 id="contact">Contacte</h2>
+            <h2 id="contact">Contacts</h2>
             <ul>  
                     <li>My Profile:
                         <a class="styleLink" href="https://github.com/abadasco" target="_blank">GitHub<a>,</a></a>
@@ -117,12 +122,58 @@
     </div>  
 </section>
 
-<div class="buttonimg" id="event">
-  <button class="imgbutton" type="button" id="showImageButton">Afișează Imaginea</button>
-  <div class="imgcontainer" id="imageContainer"></div>
+<section class="container2">
+<div class="calculator">
+    <h2>Calculator</h2>
+    <input type="text" id="result" readonly>
+<div class="buttons">
+  <button onclick="clearResult()" title="Clear">C</button>
+  <button onclick="appendValue('7')" title="Add 7 to the input">7</button>
+  <button onclick="appendValue('8')" title="Add 8 to the input">8</button>
+  <button onclick="appendValue('9')" title="Add 9 to the input">9</button>
+  <button onclick="appendValue('+')" title="Addition">+</button>
+  <button onclick="appendValue('4')" title="Add 4 to the input">4</button>
+  <button onclick="appendValue('5')" title="Add 5 to the input">5</button>
+  <button onclick="appendValue('6')" title="Add 6 to the input">6</button>
+  <button onclick="appendValue('-')" title="Subtraction">-</button>
+  <button onclick="appendValue('1')" title="Add 1 to the input">1</button>
+  <button onclick="appendValue('2')" title="Add 2 to the input">2</button>
+  <button onclick="appendValue('3')" title="Add 3 to the input">3</button>
+  <button onclick="appendValue('*')" title="Multiplication">*</button>
+  <button onclick="appendValue('0')" title="Add 0 to the input">0</button>
+  <button onclick="appendValue('.')" title="Add decimal point to the input">.</button>
+  <button onclick="calculateResult()" title="Calculate result">=</button>
+  <button onclick="appendValue('/')" title="Division">/</button>
 </div>
+</div>
+<div>
+    <h2 class="position">Hover Efect</h2>
+<div class="image-container">
+    
+    <img src="Foto/red1.png" alt="Image 1" width="200" height="200">
+    <div class="image-info">Red is a Color</div>
+    </div>
+    
+    <div class="image-container">
+    <img src="Foto/black2.png" alt="Image 2" width="200" height="200">
+    <div class="image-info">Black is another color</div>
+    </div>
+    
+    <div class="image-container">
+    <img src="Foto/gray3.png" alt="Image 3" width="200" height="200">
+    <div class="image-info">But it is gray</div>
+    </div>
+</div>
+</section>
+
+<div class="buttonimg" id="event">
+    <button class="imgbutton" type="button" id="showImageButton">Show Image</button>
+    <div class="imgcontainer" id="imageContainer"></div>
+</div>
+
 </body>
 <script src="script.js"></script>
 <footer>
     <p>&copy; Landing Page 2024</p>
 </footer>
+</html>

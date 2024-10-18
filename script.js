@@ -1,10 +1,10 @@
 const switchModeButton = document.getElementById('switchMode');
 const themeLink = document.getElementById('theme');
 switchModeButton.addEventListener('click', () => {
-    if (themeLink.getAttribute('href') === 'light_mode.css') {
-        themeLink.setAttribute('href', 'dark_mode.css');
+    if (themeLink.getAttribute('href') === '/dark_mode.css') {
+        themeLink.setAttribute('href', '/light_mode.css');
     } else {
-        themeLink.setAttribute('href', 'light_mode.css');
+        themeLink.setAttribute('href', '/dark_mode.css');
     }
 });
 function openNav() {
@@ -61,3 +61,49 @@ function updateDateTime() {
 }
 updateDateTime();
 setInterval(updateDateTime, 1000);
+
+function appendValue(value) {
+  document.getElementById('result').value += value;
+}
+
+function clearResult() {
+  document.getElementById('result').value = '';
+}
+
+function calculateResult() {
+  var result = document.getElementById('result').value;
+  var answer = eval(result);
+  document.getElementById('result').value = answer;
+}
+
+var modal = document.getElementById("modal");
+var img = document.getElementById("myImage");
+var modalImg = document.getElementById("imgFullScreen");
+var captionText = document.getElementById("caption");
+
+img.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById("modal");
+var img = document.getElementById("myImage1");
+var modalImg = document.getElementById("imgFullScreen");
+var captionText = document.getElementById("caption");
+
+img.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
