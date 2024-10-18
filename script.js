@@ -1,10 +1,10 @@
 const switchModeButton = document.getElementById('switchMode');
 const themeLink = document.getElementById('theme');
 switchModeButton.addEventListener('click', () => {
-    if (themeLink.getAttribute('href') === '/dark_mode.css') {
-        themeLink.setAttribute('href', '/light_mode.css');
+    if (themeLink.getAttribute('href') === 'dark_mode.css') {
+        themeLink.setAttribute('href', 'light_mode.css');
     } else {
-        themeLink.setAttribute('href', '/dark_mode.css');
+        themeLink.setAttribute('href', 'dark_mode.css');
     }
 });
 function openNav() {
